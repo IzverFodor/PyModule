@@ -8,6 +8,10 @@
           "value": "text/plain; charset=utf-8"
         }
       ]
+    },
+    {
+      "source": "/(.*).html",
+      "headers": [{ "key": "Content-Type", "value": "text/html" }]
     }
   ]
 }
