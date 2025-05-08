@@ -1,7 +1,16 @@
 {
   "headers": [
     {
-      "source": "/(.*)",
+      "source": "/(.*).py",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain; charset=utf-8"
+        }
+      ]
+    },
+    {
+      "source": "/(.*).txt",
       "headers": [
         {
           "key": "Content-Type",
@@ -11,7 +20,12 @@
     },
     {
       "source": "/(.*).html",
-      "headers": [{ "key": "Content-Type", "value": "text/html" }]
+      "headers": [
+        { 
+          "key": "Content-Type", 
+          "value": "text/html" 
+        }
+      ]
     }
   ]
 }
